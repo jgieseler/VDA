@@ -24,6 +24,9 @@ RUN mkdir /media/notebooks/examples/
 COPY examples/*.csv /media/notebooks/examples/
 
 # create data dirs
+RUN mkdir /media/notebooks/particle_data/
+RUN mkdir /media/notebooks/particle_data/l2/
+RUN mkdir /media/notebooks/particle_data/l2/epd/
 RUN mkdir /media/notebooks/particle_data/l2/epd/ept/
 RUN mkdir /media/notebooks/particle_data/l2/epd/het/
 
