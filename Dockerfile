@@ -30,6 +30,9 @@ RUN mkdir /media/notebooks/particle_data/l2/epd/
 RUN mkdir /media/notebooks/particle_data/l2/epd/ept/
 RUN mkdir /media/notebooks/particle_data/l2/epd/het/
 
+# give excessive user rights to data dir. check this in the future!
+RUN chmod -R 777 /media/notebooks/particle_data/
+
 WORKDIR /tmp
 
 COPY environment.yml /tmp/
