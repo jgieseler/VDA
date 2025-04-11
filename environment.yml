@@ -9,5 +9,3 @@ dependencies:
   - matplotlib==3.7.1
   - numpy==1.23.5
   - scipy==1.10.1
-  - pip:
-    - -r requirements.txt
