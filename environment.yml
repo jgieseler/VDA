@@ -9,12 +9,12 @@ dependencies:
   - matplotlib==3.7.1
   - numpy==1.23.5
   - scipy==1.10.1
-  - pip:
-    - astropy>=6.1.7
-    - astrospice>=0.2.1
-    - ipywidgets>=8.1.5
-    - pandas>=1.5.3
-    - git+https://github.com/Christian-Palmroos/PyOnset/
-    - solo-epd-loader>=0.3.7
-    - sunpy>=6.0.4
-    - seppy>=0.1.16
+  # - pip:
+  #   - astropy>=6.1.7
+  #   - astrospice>=0.2.1
+  #   - ipywidgets>=8.1.5
+  #   - pandas>=1.5.3
+  #   - git+https://github.com/Christian-Palmroos/PyOnset/
+  #   - solo-epd-loader>=0.3.7
+  #   - sunpy>=6.0.4
+  #   - seppy>=0.1.16
