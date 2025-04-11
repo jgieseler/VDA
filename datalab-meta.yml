@@ -1,0 +1,15 @@
+title: SPEARHEAD-VDA Fork
+alternateName: VDA Fork
+abstract: This is a JupyterLab demo datalab
+contactPoint.email: jan.gieseler@utu.fi 
+creator.name: Jan Gieseler
+version: 0.0.1
+description: > 
+  This datalab is used to demonstrate the creation and build of a 
+  custom JupyterLab type datalab for internal developers on ESA Datalabs.
+  A metadata file is used to auto-complete metadata fields. 
+  This build uses a custom Dockerfile.
+  The environment.yml file is used to install python packages.
+distribution.license: None
+domain: https://spearhead-he.eu
+language: english
