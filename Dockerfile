@@ -17,8 +17,11 @@ ENV JUPYTER_CONFIG_PATH=/etc/
 
 # uncomment the following lines if you have (e.g. notebook) files to share with users:
 # (adapt as necessary)
-# RUN mkdir /media/notebooks/
-# COPY *.ipynb /media/notebooks/
+RUN mkdir /media/notebooks/
+COPY *.ipynb /media/notebooks/
+COPY vda_tool_configuration.py /media/notebooks/
+RUN mkdir /media/notebooks/examples/
+COPY examples/*.csv /media/notebooks/examples/
 
 WORKDIR /tmp
 
