@@ -23,14 +23,16 @@ COPY vda_tool_configuration.py /media/notebooks/
 RUN mkdir /media/notebooks/examples/
 COPY examples/*.csv /media/notebooks/examples/
 
+# create data dirs
+RUN mkdir /media/notebooks/particle_data/l2/epd/ept/
+RUN mkdir /media/notebooks/particle_data/l2/epd/het/
+
 WORKDIR /tmp
 
 COPY environment.yml /tmp/
-
 RUN conda env create -f /tmp/environment.yml \
     && conda clean -all -f -y \
 	&& conda run -n demo python -m ipykernel install --name=demo --display-name=demo
 
 COPY requirements.txt /tmp/
-
 RUN pip install -r /tmp/requirements.txt
