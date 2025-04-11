@@ -31,3 +31,4 @@ RUN conda env create -f /tmp/environment.yml \
     && conda clean -all -f -y \
 	&& conda run -n demo python -m ipykernel install --name=demo --display-name=demo
 
+RUN pip install -r requirements.txt
