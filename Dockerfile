@@ -19,7 +19,7 @@ ENV JUPYTER_CONFIG_PATH=/etc/
 # (adapt as necessary)
 RUN mkdir /media/notebooks/
 COPY *.ipynb /media/notebooks/
-COPY vda_tool_configuration.py /media/notebooks/
+COPY *.py /media/notebooks/
 RUN mkdir /media/notebooks/examples/
 COPY examples/*.csv /media/notebooks/examples/
 
